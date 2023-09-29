@@ -18,6 +18,6 @@ func _process(delta):
 func _on_timeout():
 	var instance = enemy.instantiate()
 	var distFromPlayer = randf_range(minDistFromPlayer, maxDistFromPlayer)
-	var angle = randf_range(0, 2*PI)
+	var angle = randf_range(0, TAU)
 	instance.position = Vector2(distFromPlayer * cos(angle), distFromPlayer * sin(angle))
 	add_child(instance)
