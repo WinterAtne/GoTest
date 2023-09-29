@@ -2,10 +2,12 @@ extends Area2D
 
 @export var speed : float = 350
 
+const maxHealth : int = 5
+var currentHealth : int
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	currentHealth = maxHealth
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -28,5 +30,16 @@ func _process(delta):
 
 func _on_area_entered(area):
 	if (area.is_in_group("Enemy")):
-		print("HIT!")
-	pass # Replace with function body.
+		damage()
+
+func damage():
+	currentHealth -= 1
+	print(currentHealth)
+	if (currentHealth <= 0):
+		die()
+		
+
+func die():
+	for child in get_children():
+		child.queue_free
+	queue_free()
