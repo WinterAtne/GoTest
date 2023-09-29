@@ -1,4 +1,8 @@
+Label
+TextEdit
+RichTextLabel
+CollisionShape2D
+Area2D
 Sprite2D
 Node2D
 Camera2D
-Label

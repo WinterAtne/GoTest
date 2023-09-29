@@ -1,4 +1,4 @@
-res://Hello.tscn
 res://player.tscn
-res://player_movement.gd
 res://world.tscn
+res://enemy.tscn
+res://opensource.tscn
