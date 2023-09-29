@@ -9,5 +9,6 @@ The following features are nessesary:
 2) shooting
 3) enemies that chace the player
 4) which die when shot
+5) that reduce the player's hp when they run into them
 
 The plan is to have this completed within 6 hours of developement time.
