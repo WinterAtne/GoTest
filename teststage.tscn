@@ -13,4 +13,5 @@ wait_time = 3.0
 autostart = true
 script = ExtResource("2_2w2qh")
 
+[connection signal="tree_exiting" from="Player" to="EnemyFactory" method="_on_player_tree_exiting"]
 [connection signal="timeout" from="EnemyFactory" to="EnemyFactory" method="_on_timeout"]

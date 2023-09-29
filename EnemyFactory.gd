@@ -12,3 +12,9 @@ func _on_timeout():
 	var angle = randf_range(0, TAU)
 	instance.position = Vector2(distFromPlayer * cos(angle), distFromPlayer * sin(angle))
 	add_child(instance)
+
+
+func _on_player_tree_exiting():
+	for child in get_children():
+		child.queue_free
+	queue_free()
