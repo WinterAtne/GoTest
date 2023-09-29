@@ -10,5 +10,6 @@ The following features are nessesary:
 3) enemies that chace the player
 4) which die when shot
 5) that reduce the player's hp when they run into them
+6) enemies infinitely spawn
 
 The plan is to have this completed within 6 hours of developement time.
