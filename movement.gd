@@ -24,3 +24,9 @@ func _process(delta):
 		direction += Vector2.DOWN
 	
 	position += direction * speed * delta
+
+
+func _on_area_entered(area):
+	if (area.is_in_group("Enemy")):
+		print("HIT!")
+	pass # Replace with function body.

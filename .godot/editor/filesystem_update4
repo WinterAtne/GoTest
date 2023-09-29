@@ -1,5 +1,5 @@
-res://movement.gd
 res://player.tscn
 res://enemy.tscn
-res://seek.gd
 res://teststage.tscn
+res://seek.gd
+res://movement.gd

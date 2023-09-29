@@ -17,3 +17,10 @@ func _process(delta):
 	look_at(seekPosition)
 	
 	
+	
+
+
+func _on_area_entered(area):
+	if (area.is_in_group("Player")):
+		print("i ded")
+	pass # Replace with function body.
