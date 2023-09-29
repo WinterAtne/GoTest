@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://byrgyp5witasq"]
+
+[ext_resource type="Script" path="res://movement.gd" id="1_eykrg"]
+[ext_resource type="Texture2D" uid="uid://drov1djmis231" path="res://icon.svg" id="1_qqnd7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7ackc"]
+
+[node name="Player" type="Area2D"]
+script = ExtResource("1_eykrg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7ackc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_qqnd7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
