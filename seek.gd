@@ -9,7 +9,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var seekPosition = get_node("../Player").get_position()
+	var seekPosition = get_node("../../Player").get_position()
 	
 	position.x = move_toward(position.x, seekPosition.x, speed * delta)
 	position.y = move_toward(position.y, seekPosition.y, speed * delta)
