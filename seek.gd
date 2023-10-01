@@ -1,6 +1,6 @@
 extends Area2D
 
-var speed : float = 200
+var speed : float = 1200
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,8 +11,7 @@ func _ready():
 func _process(delta):
 	var seekPosition = get_node("../../Player").get_position()
 	
-	position.x = move_toward(position.x, seekPosition.x, speed * delta)
-	position.y = move_toward(position.y, seekPosition.y, speed * delta)
+	position = position.move_toward(seekPosition, delta * speed)
 	
 	look_at(seekPosition)
 	

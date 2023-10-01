@@ -6,10 +6,9 @@
 [node name="teststage" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_1b2vx")]
-position = Vector2(-1, 0)
 
 [node name="EnemyFactory" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 2.5
 autostart = true
 script = ExtResource("2_2w2qh")
 
