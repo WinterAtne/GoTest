@@ -1,6 +1,7 @@
 res://player.tscn
+res://EnemyFactory.gd
+res://shoot.gd
 res://enemy.tscn
 res://teststage.tscn
-res://movement.gd
-res://EnemyFactory.gd
-res://seek.gd
+res://bullet.tscn
+res://bullet.gd
