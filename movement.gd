@@ -2,6 +2,8 @@ extends Area2D
 
 @export var speed : float = 350
 
+var screen = load("res://deathscreen.tscn")
+
 const maxHealth : int = 5
 var currentHealth : int
 
@@ -35,11 +37,14 @@ func _on_area_entered(area):
 func damage():
 	currentHealth -= 1
 	print(currentHealth)
+	scale = Vector2(1,1) * currentHealth/maxHealth
 	if (currentHealth <= 0):
 		die()
 		
 
 func die():
+	var instance = screen.instantiate()
+	get_parent().add_child(instance)
 	for child in get_children():
 		child.queue_free
 	queue_free()

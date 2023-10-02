@@ -1,9 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://0f4ns4bi0wtl"]
 
 [ext_resource type="Script" path="res://seek.gd" id="1_i00o4"]
-[ext_resource type="Texture2D" uid="uid://drov1djmis231" path="res://icon.svg" id="2_emej4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wq8ol"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_43t46"]
+font_size = 48
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Enemy" type="Area2D" groups=["Enemy"]]
 script = ExtResource("1_i00o4")
@@ -12,8 +16,21 @@ script = ExtResource("1_i00o4")
 scale = Vector2(6, 6)
 shape = SubResource("CircleShape2D_wq8ol")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-rotation = 1.5708
-texture = ExtResource("2_emej4")
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.5
+offset_top = -48.0
+offset_right = 122.5
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "I AM A 
+BAD GUY"
+label_settings = SubResource("LabelSettings_43t46")
+horizontal_alignment = 1
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

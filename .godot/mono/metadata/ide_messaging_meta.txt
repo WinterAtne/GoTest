@@ -1,0 +1,2 @@
+﻿39077
+/home/winter/Godot/Godot_v4.1.1-stable_mono_linux_x86_64/Godot.x86_64

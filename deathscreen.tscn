@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlkhsq2g0dscj"]
+
+[ext_resource type="Script" path="res://respawnbutton.gd" id="1_af61h"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_acsh7"]
+font_size = 128
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_fte1q"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -300.0
+offset_top = -276.0
+offset_right = 303.0
+offset_bottom = -98.0
+text = "YOU DIED"
+label_settings = SubResource("LabelSettings_acsh7")
+
+[node name="Button" type="Button" parent="."]
+offset_left = -81.0
+offset_top = 4.0
+offset_right = 82.0
+offset_bottom = 53.0
+text = "Respawn"
+script = ExtResource("1_af61h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.0823529, 0.172549, 0.196078, 0.533333)
+z_index = -1
+position = Vector2(0, 0.999985)
+scale = Vector2(1256, 710)
+texture = SubResource("CanvasTexture_fte1q")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
