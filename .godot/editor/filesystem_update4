@@ -5,8 +5,5 @@ res://enemy.tscn
 res://teststage.tscn
 res://bullet.tscn
 res://shot.tscn
-res://movement.gd
 res://deathscreen.tscn
-res://respawnbutton.gd
-res://shot.gd
 res://bullet.gd
